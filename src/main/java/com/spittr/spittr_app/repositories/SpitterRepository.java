@@ -10,6 +10,7 @@ public class SpitterRepository {
     private SessionFactory sessionFactory;
 
     public SpitterRepository() {
+        /*print SpitterRepository.constrctor */
         Configuration config=new Configuration();
         config.configure();
         sessionFactory = config.buildSessionFactory();
@@ -17,6 +18,7 @@ public class SpitterRepository {
     }
 
     public void createSpitter(Long id, String username, String password, String firstName, String lastName, String email){
+        /*print SpitterRepository.createSpitter */
         Session session = sessionFactory.openSession();
         Transaction t=session.beginTransaction();
 
