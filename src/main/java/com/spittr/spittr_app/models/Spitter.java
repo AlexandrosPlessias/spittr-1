@@ -13,6 +13,7 @@ import javax.persistence.Table;
 public class Spitter {
     @Id
     @NotNull
+    /* @Column ... */
     private Long id;
 
     @NotNull
