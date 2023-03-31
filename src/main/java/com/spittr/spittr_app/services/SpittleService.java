@@ -7,11 +7,11 @@ public class SpittleService {
     private SpittleJDBCRepository spittleJDBCRepository;
 
     public SpittleService() {
+        System.out.println("SpittleService.constructor");
         this.spittleJDBCRepository = new SpittleJDBCRepository();
     }
 
     public void createSpittle(String message, String time, Double longitude, Double latitude){
-        System.out.println("\nCreate new spittle ...");
         System.out.println("SpittleService.createSpittle");
         // ------ Plain JAVA -------------
         //return new Spittle(id, message, time, longitude, latitude);
@@ -20,7 +20,7 @@ public class SpittleService {
         this.spittleJDBCRepository.createSpittle(message, time, longitude, latitude);
     }
     public Spittle readSpittleById(Long id){
-        System.out.println("\nRead spittle:");
+        System.out.println("SpittleService.readSpittleById");
 
         // ------ Plain JAVA -------------
         //System.out.println(spittle.read());
@@ -30,7 +30,7 @@ public class SpittleService {
 
     }
     public void updateSpittleMessage(Long id, String message){
-        System.out.println("\nUpdate spittle ...:");
+        System.out.println("SpittleService.updateSpittleMessage");
 
         // ------ Plain JAVA -------------
         //spittle.update(message);
@@ -40,7 +40,7 @@ public class SpittleService {
     }
 
     public void deleteSpittle(Long id){
-        System.out.println("\nDelete spittle ...:");
+        System.out.println("SpittleService.deleteSpittle");
 
         // ------ Plain JAVA -------------
         //spittle = null;
