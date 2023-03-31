@@ -1,6 +1,9 @@
 package com.spittr.spittr_app.models;
 
+/*table*/
 public class Spittle {
+    /*id*/
+    /*column*/
     private Long id;
     private String message;
     private String time;
