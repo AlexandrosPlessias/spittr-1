@@ -15,7 +15,6 @@ public class SpitterService {
     }
 
     public void createSpitter(String username, String password, String firstName, String lastName, String email){
-        System.out.println("\n Create new spitter ...");
         System.out.println("SpitterService.createSpitter");
         // ------ Plain JAVA -------------
         //return new Spitter(id, username, password, firstName, lastName, email);
@@ -28,7 +27,7 @@ public class SpitterService {
     }
 
     public Spitter readSpitterByUsername(String username){
-        System.out.println("\nRead spitter:");
+        System.out.println("SpitterService.readSpitterByUsername");
         // ------ Plain JAVA -------------
         //System.out.println(spitter.read());
 
@@ -37,7 +36,7 @@ public class SpitterService {
 
     }
     public void updateSpitterEmailByUsername(String username, String email){
-        System.out.println("\nUpdate spitter ...:");
+        System.out.println("SpitterService.updateSpitterEmailByUsername");
         // ------ Plain JAVA -------------
         //spitter.update(email);
 
@@ -45,7 +44,7 @@ public class SpitterService {
         spitterJDBCRepository.updateSpitterEmailByUsername(username, email);
     }
     public void deleteSpitterByUsername(String username){
-        System.out.println("\nDelete spitter ...:");
+        System.out.println("SpitterService.deleteSpitterByUsername");
 
         // ------ Plain JAVA -------------
         //spitter = null;
