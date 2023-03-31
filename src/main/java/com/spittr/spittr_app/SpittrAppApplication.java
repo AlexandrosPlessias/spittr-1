@@ -23,6 +23,8 @@ public class SpittrAppApplication {
 
 		spitterService.updateSpitterEmailByUsername("leonelMessi", "leo@gmail.com");
 		System.out.println(spitterService.readSpitterByUsername("leonelMessi"));
+		
+		/* Delete */
 
 		// ----------- Spittle -----------
 		SpittleService spittleService = new SpittleService();
@@ -31,10 +33,11 @@ public class SpittrAppApplication {
 		Spittle hello = spittleService.readSpittleById(1024L);
 		System.out.println(hello.toString());
 
+		/* Update *
 //		spittleService.updateSpittleMessage(1024L, "Good Night!");
 //		System.out.println(spittleService.readSpittleById(1024L));
 
-
+		/* Delete */
 
 	}
 
